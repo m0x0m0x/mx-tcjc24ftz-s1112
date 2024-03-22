@@ -2,7 +2,7 @@
 143: Simple Arrays
 */
 // === import zone
-import { mainHead } from "../../UTILS/text.js";
+import { mainHead, subHead } from "../../UTILS/text.js";
 // ===
 mainHead("143: Simple Arrays");
 
@@ -18,3 +18,7 @@ const currencies = new Map([
 ]);
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+subHead("Examine the data structues ");
+console.table(currencies);
+console.table(movements);

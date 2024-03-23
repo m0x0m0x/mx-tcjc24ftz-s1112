@@ -42,3 +42,43 @@ console.log(arr.slice());
 
 // Using spread operator
 console.log([...arr]);
+
+subHead("Splice Method - Change original array - Array Mutation");
+// console.log(arr.splice(2));
+console.log(arr);
+
+// Usual use to remove last element
+arr.splice(-1);
+console.log(arr);
+
+// Secon param is the remove count
+arr.splice(1, 2);
+console.log(arr);
+
+subHead("Reverse");
+
+const arr2 = ["j", "i", "h", "g", "f"];
+
+// reverse method mutates array
+console.log(arr2.reverse());
+console.log(arr2);
+
+subHead("Concat - Concatenate Array");
+
+// Do on arr and arr2
+const lettrs = arr.concat(arr2);
+console.log(lettrs);
+
+// This block is your testing
+let arr11 = ["h", "e"];
+let arr12 = ["e", "l", "l", "o"];
+const arr11ar12 = arr11.concat(arr12);
+console.log(arr11ar12);
+
+// Same above function and both arrays concatenated but not stored in a variable
+console.log([...arr11, ...arr12]);
+
+subHead("Join Method also similar to concat");
+// Joins the letter with a character
+console.log(arr11ar12.join(" - "));
+console.log();

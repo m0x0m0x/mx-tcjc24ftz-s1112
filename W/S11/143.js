@@ -2,7 +2,7 @@
 143: Simple Arrays
 */
 // === import zone
-import { mainHead, subHead } from "../../UTILS/text.js";
+import { mainHead, paraText, subHead } from "../../UTILS/text.js";
 // ===
 mainHead("143: Simple Arrays");
 
@@ -22,3 +22,23 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 subHead("Examine the data structues ");
 console.table(currencies);
 console.table(movements);
+
+subHead("Array Methods Learning");
+
+// Simple array
+let arr = ["a", "b", "c", "d", "e"];
+
+paraText("Slice Method - extract part of array");
+
+// Slicing from position  - array.slic(start, end)
+console.log(arr.slice(2));
+console.log(arr.slice(2, 4));
+console.log(arr.slice(-2));
+console.log(arr.slice(-1));
+console.log(arr.slice(1, -2));
+
+//Shadow copy
+console.log(arr.slice());
+
+// Using spread operator
+console.log([...arr]);

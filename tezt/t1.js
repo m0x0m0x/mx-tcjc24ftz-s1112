@@ -1,7 +1,7 @@
 /* 
 t1:- Teztins
 */
-import { mainHead, paraText } from "../UTILS/text.js";
+import { mainHead, paraText, subHead } from "../UTILS/text.js";
 
 mainHead("Maps access test");
 
@@ -14,6 +14,13 @@ const currencies = new Map([
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-paraText("Print out the array and map");
+paraText("Curencies ");
 console.log(currencies);
 console.table(currencies);
+
+paraText("Movements array");
+console.log(movements);
+console.table(movements);
+
+subHead("Accessing elements of map curencies");
+console.log(currencies.get("USD"));

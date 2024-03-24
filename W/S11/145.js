@@ -19,9 +19,9 @@ subHead("Using Standard Loop");
 // using traditional method
 for (const mvmt of movements) {
   if (mvmt > 0) {
-    console.log(`Money IN %c${mvmt}`, "color:green");
+    console.log(`Movement IN %c${mvmt}`, "color:green");
   } else {
-    console.log(`Money out %c${mvmt}`, "color:red");
+    console.log(`Movement out %c${mvmt}`, "color:red");
   }
 }
 
@@ -29,9 +29,9 @@ for (const mvmt of movements) {
 paraText("Using the Foreach method");
 movements.forEach(function (mvm) {
   if (mvm > 0) {
-    console.log(`Money 💰 %c${mvm}`, "color:green");
+    console.log(`Movement 💰 %c${mvm}`, "color:green");
   } else {
-    console.log(`Money 💸 %c${mvm}`, "color:red");
+    console.log(`Movement 💸 %c${mvm}`, "color:red");
   }
 });
 /* 
@@ -42,3 +42,21 @@ Above function works like this
 */
 
 paraText("Accessing counter variable in for..of Loop");
+// Recaling the destructuring operator in this function
+for (const [i, mvm] of movements.entries()) {
+  if (mvm > 0) {
+    console.log(`Movement ${i + 1}  💰 %c${mvm}`, "color:green");
+  } else {
+    console.log(`Movement ${i + 1}  💸 %c${mvm}`, "color:red");
+  }
+}
+
+paraText("Accessing index in the foreach method");
+// Here order is important inside the function
+movements.forEach(function (mvm, i, arr) {
+  if (mvm > 0) {
+    console.log(`Movement ${i + 1} 💰 %c${mvm}`, "color:green");
+  } else {
+    console.log(`Movement ${i + 1} 💸 %c${mvm}`, "color:red");
+  }
+});

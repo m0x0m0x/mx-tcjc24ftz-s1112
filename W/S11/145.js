@@ -40,3 +40,5 @@ Above function works like this
 2 - function(450)
 3 - function(-500)
 */
+
+paraText("Accessing counter variable in for..of Loop");
